@@ -1,0 +1,33 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: postgres
+  host: db
+  port: 5432
+  pool: 5
+
+development:
+  <<: *default
+  database: panda_development
+
+test:
+  <<: *default
+  database: panda_test
+
+production:
+  <<: *default
+  database: panda_production
+
+cable:
+  <<: *default
+  database: panda_cable
+
+queue:
+  <<: *default
+  database: panda_queue
+
+cache:
+  <<: *default
+  database: panda_cache
+

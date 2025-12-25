@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PandaApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <% if session[:user_id] %>
+          <li><%= link_to "Perfil", user_path(session[:user_id]) %></li>
+          <li><%= link_to "Cerrar sesión", session_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Registrarse", new_user_path %></li>
+          <li><%= link_to "Iniciar sesión", new_session_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>
+

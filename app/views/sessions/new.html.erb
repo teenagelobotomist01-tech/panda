@@ -1,0 +1,18 @@
+<h1>Iniciar sesión</h1>
+
+<%= form_with url: session_path, local: true do |f| %>
+  <div>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
+
+  <div>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+
+  <div>
+    <%= f.submit "Entrar" %>
+  </div>
+<% end %>
+
