@@ -25,3 +25,4 @@ EXPOSE 3000
 # Comando por defecto: arranca Puma con la configuración de Rails
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
 
+ENV SECRET_KEY_BASE=727c08bd27afc1fd25d7912dbdd1e2f44cb5b9b04dc11b2224de2fe87e4321410cdeeedd5750ad1843d9df6c9f246da44862c616f17c2219e0d957b960e9807f

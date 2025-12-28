@@ -6,6 +6,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+      SECRET_KEY_BASE: ${SECRET_KEY_BASE}
     volumes:
       - db_data:/var/lib/postgresql/data
 
