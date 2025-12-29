@@ -34,3 +34,46 @@
   font-style: normal;
 }
 
+.display-content {
+	display: block;
+	/* justify-content: center; */
+	padding: 40px;
+	/* display: inline-block; */
+	text-align: center;
+}
+
+.footer {
+text-align: center;
+}
+.footerlogo {
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+}
+
+.body-copy {
+  font-family: 'Courier New', monospace;
+}
+/* estilos.css */
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* opcional para separación */
+}
+
+.boton-interesado {
+	background: #0084ff;
+	border-radius: 12px;
+	color: white;
+	font-size: 20px;
+	padding: 20px 40px;
+	text-decoration: none;
+	display: inline-block;
+	transition: background 0.3s ease;
+	/* margin-left: -343%; */
+	margin-top: 40px;
+	margin-bottom: 43px;
+}
+.boton-interesado:hover {
+  background: #005fcc;
+}
+

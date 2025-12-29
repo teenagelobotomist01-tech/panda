@@ -18,20 +18,18 @@
   <%= image_tag "logo.png", alt: "Descripción", class: "logo" %>
   <h1 class="title">Rockstar</h1>
     </div>
-    
-    <nav>
-      <ul>
-        <% if session[:user_id] %>
-          <li><%= link_to "Perfil", user_path(session[:user_id]) %></li>
-          <li><%= link_to "Cerrar sesión", session_path, method: :delete %></li>
-        <% else %>
-          <li><%= link_to "Registrarse", new_user_path %></li>
-          <li><%= link_to "Iniciar sesión", new_session_path %></li>
-        <% end %>
-      </ul>
-    </nav>
-
+       <div class="display-content">
     <%= yield %>
+  </div>
+
+
+      <footer class="footer">
+  <div>
+  <p class="footerlogo">
+    ★Rockstar <%= Time.now.year %>
+  <p>
+  </div>
+</footer>
   </body>
 </html>
 
