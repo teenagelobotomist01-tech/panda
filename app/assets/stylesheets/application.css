@@ -9,6 +9,12 @@
  * Consider organizing styles into separate files for maintainability.
  */
 
+/*
+ *= require_self
+ *= require_tree .
+*/
+
+
 .brand {
   display: flex;
   justify-content: center;
