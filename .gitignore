@@ -35,4 +35,4 @@
 
 docker-compose.override.yml
 nginx.dev.conf
-
+diagnose_assets.sh
