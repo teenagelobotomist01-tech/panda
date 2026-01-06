@@ -1,20 +1,19 @@
 <h1 class="form-title">Iniciar sesión</h1>
 
 <div class="form-container">
-  <%= form_with url: session_path, local: true, html: { class: "form" } do |f| %>
+  <%= form_with url: login_path, local: true, html: { class: "form" } do |f| %>
     <div>
       <%= f.label :email, "Correo electrónico", class: "form-label" %>
       <%= f.email_field :email, class: "form-input" %>
     </div>
-
     <div>
       <%= f.label :password, "Contraseña", class: "form-label" %>
       <%= f.password_field :password, class: "form-input" %>
     </div>
-
     <div>
-      <%= f.submit "Entrar", class: "form-button" %>
+      <%= f.submit "Iniciar sesión", class: "btn" %>
     </div>
   <% end %>
 </div>
+
 

@@ -140,3 +140,15 @@ text-align: center;
   background: #005fcc;
 }
 
+.users-table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+}
+
